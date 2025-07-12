@@ -1,0 +1,18 @@
+model:
+  name: Qwen/Qwen2-7B-Instruct
+  max_length: 512
+  device: cuda
+redis:
+  host: localhost
+  port: 6379
+  db: 0
+  ttl: 3600
+database:
+  path: ./chatbot.db
+api:
+  host: 0.0.0.0
+  port: 8000
+gdpr:
+  log_path: ./gdpr_logs/
+  anonymize: true
+serpapi_key: "8501d430975ea3d2f92d6bdb54889d40f533d6d7fc023531c0b8dfa11aa0d7ed"

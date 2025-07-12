@@ -1,0 +1,5 @@
+pycache/
+*.pyc
+src/gdpr_logs/
+src/chatbot.db
+.env
