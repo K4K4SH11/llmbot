@@ -3,11 +3,10 @@ from datetime import datetime
 import re
 
 def anonymize_data(text):
-    # Remove PII (e.g., names, addresses)
     patterns = [
-        r"\b[A-Z][a-z]+ [A-Z][a-z]+\b",  # Names
-        r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}",  # IPs
-        r"\b\d{4}-\d{2}-\d{2}\b"  # Dates
+        r"\b[A-Z][a-z]+ [A-Z][a-z]+\b",
+        r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}",
+        r"\b\d{4}-\d{2}-\d{2}\b"
     ]
     for pattern in patterns:
         text = re.sub(pattern, "[REDACTED]", text)

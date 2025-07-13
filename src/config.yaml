@@ -15,4 +15,5 @@ api:
 gdpr:
   log_path: ./gdpr_logs/
   anonymize: true
-serpapi_key: "8501d430975ea3d2f92d6bdb54889d40f533d6d7fc023531c0b8dfa11aa0d7ed"
+serpapi_key: ""
+model_server_url: ""
